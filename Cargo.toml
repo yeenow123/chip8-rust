@@ -1,0 +1,11 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+authors = ["Yee-Ning Cheng <ycheng@tremorvideo.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
+
+[dependencies.sdl2]
+features = ["use_mac_framework"]
