@@ -28,7 +28,7 @@ pub struct AudioDeviceWrapper {
 }
 
 impl AudioDeviceWrapper {
-    pub fn new(sdl_context: &Sdl) -> AudioDeviceWrapper {
+    pub fn new(sdl_context: &Sdl) -> Self {
         let audio_subsystem = sdl_context.audio().unwrap();
         let desired_spec = AudioSpecDesired {
             freq: Some(44_100),

@@ -11,7 +11,7 @@ pub struct GraphicsDevice {
 }
 
 impl GraphicsDevice {
-    pub fn new(sdl_context: &Sdl) -> GraphicsDevice {
+    pub fn new(sdl_context: &Sdl) -> Self {
         let video_subsystem = sdl_context.video().unwrap();
 
         let _window = video_subsystem

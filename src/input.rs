@@ -17,7 +17,7 @@ pub struct InputDevice {
 }
 
 impl InputDevice {
-    pub fn new(sdl_context: &sdl2::Sdl) -> InputDevice {
+    pub fn new(sdl_context: &sdl2::Sdl) -> Self {
         let events = sdl_context.event_pump().unwrap();
         InputDevice {
             key: [false; KEYPAD_SIZE],

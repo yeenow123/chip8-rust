@@ -52,7 +52,7 @@ pub struct Chip8 {
 }
 
 impl Chip8 {
-    pub fn new() -> Chip8 {
+    pub fn new() -> Self {
         let mut init_memory = [0; MEMORY_SIZE];
         for i in 0..80 {
             init_memory[i] = FONTSET[i];
@@ -365,5 +365,4 @@ mod tests {
         assert!(handle_programcounter(0, ProgramCounterStep::Noop) == 0);
     }
 
-    fn 
 }
